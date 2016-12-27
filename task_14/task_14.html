@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Task 14</title>
+  </head>
+<body>
+
+  <h3>污染城市列表</h3>
+  <ul id="aqi-list">
+<!--   
+    <li>第一名：福州（样例），10</li>
+    <li>第二名：福州（样例），10</li> -->
+  </ul>
+
+
+<script src="../script/jquery-1.11.1.js"></script>
+<script type="text/javascript">
+
+var aqiData = [
+  ["北京", 90],
+  ["上海", 50],
+  ["福州", 10],
+  ["广州", 50],
+  ["成都", 90],
+  ["西安", 100]
+];
+
+$(function (argument) {
+    console.log("123");
+    var temp =0;
+    // 冒泡懵逼排序
+    for (var i = 0; i < aqiData.length-1; i++) {
+        for (var j = 0; j < aqiData.length-i-1; j++) {
+            if (aqiData[j][1]<aqiData[j+1][1])
+             {
+                temp = aqiData[j][1];
+                aqiData[j][1]=aqiData[j+1][1];
+                aqiData[j+1][1] = temp;
+             };
+        };
+
+    };
+
+    for(x in aqiData)
+    {
+        $('#aqi-list').append('<li>'+aqiData[x][0]+': '+aqiData[x][1]+'</li>');
+    }
+    
+
+})
+
+</script>
+</body>
+</html>
