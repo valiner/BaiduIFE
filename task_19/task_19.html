@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task_19</title>
+    <style>
+    #display div{
+    width: 20px;
+    background-color: red;
+    color: #fff;
+    float: left;
+    margin-left: 5px;
+    margin-top: 10px;
+    text-align: center;
+    font: 400 20px/40px "微软雅黑"
+    }
+    #btns{
+        position: absolute;
+        left:200px;
+        top: 10px;
+    }
+    #display{
+        display: flex;
+        align-items: flex-end;
+        min-height: 100px;
+    }
+    </style>
+</head>
+<body>
+
+    <input type="text" name="num" id="num">
+<div id="btns">
+    <button id="leftadd">左插入</button>
+    <button id="rightadd">右插入</button>
+    <button id="leftdetele">左删除</button>
+    <button id="rightdetele">右删除</button>
+    <button id="maopao">排序</button>
+</div>
+    <div id="display">
+        
+    </div>
+    
+</body>
+<script src="task_19.js"></script>
+</html>
