@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task_22</title>
+    <style>
+    .div1{
+        width: 1000px;
+        height: 300px;
+        border: 1px solid red;
+        display: flex;
+        flex-direction: row;
+        margin: 100px auto;
+    }
+    .div1 div{
+            display: flex;
+            flex-direction: row;
+           
+    }
+    .show{
+        background-color: #456;
+    }
+    .show1{
+        background-color: #f9f9f9;
+    }
+    .div1>div{
+        width: 450px;
+        height: 250px;
+         border: 1px solid green;
+        margin: 25px 25px;
+    }
+    .div1>div>div{
+        width: 200px;
+        height: 200px;
+        border: 1px solid blue;
+        margin: 25px 25px;
+    }
+    .div1>div>div>div{
+        width: 50px;
+        height: 150px;
+        border: 1px solid #789;
+        margin: 25px 15px;
+    }
+    </style>
+    
+</head>
+<body>
+    <div class="div1">
+        <div>
+            <div>
+                <div></div>
+                <div></div>
+            </div>
+            <div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div></div>
+                <div></div>
+            </div>
+            <div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <button>前序遍历</button>
+</body>
+<script src="task_22.js"></script>
+</html>
