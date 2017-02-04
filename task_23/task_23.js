@@ -1,11 +1,13 @@
   var div1 = document.querySelector('.div1');
   var btn = document.querySelector("button");
   var temp = div1;
-   var l = div1.getElementsByTagName('*');
+  var l = div1.getElementsByTagName('*');
+
 
 
 btn.onclick = function (argument) {
    var timer,num=getchildernlength(),arr=[],arrend=[];
+  
    var x = num;
    arr.push(temp);
    timer = setInterval(function() {
@@ -31,6 +33,7 @@ btn.onclick = function (argument) {
                         {
                           arr.push(top.children[i]);
                           removeClass();
+          
                          if (top.children[i]==div1) 
                         {
                        top.children[i].className+=' show1';

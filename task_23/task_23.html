@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>task_22</title>
+    <title>task_23</title>
     <style>
+    * { margin:0; padding:0;} 
     .div1{
         width: 1300px;
         height: 300px;
@@ -16,6 +17,13 @@
             display: flex;
             flex-direction: row;
            
+    }
+    p{
+        margin: 25px auto;
+        text-align: center;
+    }
+    .blue{
+        background-color: blue;
     }
     .show{
         background-color: #456;
@@ -51,6 +59,7 @@
     
 </head>
 <body>
+    <p>遍历多叉树</p>
     <div class="div1">
         <div>CAT
             <div>APPLE
@@ -62,7 +71,7 @@
             <div>
                 phone
             </div>
-            <div>
+            <div>Q
                 <div>Book</div>
                 <div>School</div>
             </div>
@@ -84,6 +93,8 @@
         <div>fish</div>
     </div>
     <button>深度优先遍历</button>
+  
+
 </body>
-<script src="task_22.js"></script>
+<script src="task_23.js"></script>
 </html>
