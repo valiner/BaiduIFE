@@ -10,12 +10,17 @@
  
   btn.onclick = function (argument) {
       var timer,i=getchildernlength(),arr=[];
+      //X设置锁定每500MS更新一次
+      var x=i;
       timer = setInterval(function () {
+        while(i==x){
+
            if (i<0) 
             {
+                i--;
                 clearInterval(timer);
                 removeClass(l);
-                console.log(arr);
+                console.log(321);
             }
           // console.log(temp);
           if (temp.children.length==0) 
@@ -63,7 +68,8 @@
              
             
         }
-          
+          } 
+          x--;
             },500)
 
   }
